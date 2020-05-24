@@ -1,0 +1,136 @@
+:root {
+  --primary-color: hsl(240, 38%, 20%);
+  --secondary-color: hsl(240, 18%, 77%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+#bg1 {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  z-index: 1;
+  background-image: url('images/pattern-curve.svg');
+  background-repeat: no-repeat;
+  background-position: left bottom;
+}
+
+#bg2 {
+  width: 80%;
+  height: 80vh;
+  top: 10vh;
+  left: 10%;
+  position: absolute;
+  z-index: 2;
+  background-image: url('images/pattern-bg.svg');
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+}
+
+#bg3 {
+  width: 80%;
+  height: 80vh;
+  left: 20%;
+  top: 20vh;
+  position: absolute;
+  z-index: 3;
+  background-image: url('images/pattern-quotes.svg');
+  background-repeat: no-repeat;
+}
+
+#slider {
+  width: 70%;
+  top: 18vh;
+  left: 15%;
+  position: relative;
+  z-index: 4;
+}
+
+#slider .testimonial .image {
+  position: relative;
+  width: 415px;
+  height: 415px;
+  left: 55%;
+  z-index: 1;
+}
+
+#slider .testimonial .image img {
+  height: 415px;
+}
+
+#slider .testimonial .text {
+  display: inline-block;
+  position: absolute;
+  top: 75px;
+  font-size: 32px;
+  font-weight: 300;
+  width: 650px;
+  z-index: 2;
+}
+
+#slider .testimonial .text .author {
+  font-weight: 700;
+  font-size: 15px;
+  margin-top: 25px;
+}
+
+#slider .testimonial .text .author .occupation {
+  color: var(--secondary-color);
+}
+
+#slider .testimonial .buttons {
+  position: relative;
+  width: 110px;
+  height: 50px;
+  left: 60%;
+  top: -25px;
+  z-index: 10;
+  border-radius: 50px;
+  background-color: white;
+  box-shadow: 0px 10px 25px -5px rgba(204, 204, 204, 1);
+}
+
+#slider .testimonial .buttons .btn {
+  display: inline-block;
+  width: 50%;
+  height: 100%;
+  cursor: pointer;
+}
+
+#slider .testimonial .buttons .btn-prev {
+  float: left;
+  border-radius: 50px 0 0 50px;
+  background-image: url('images/icon-prev.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#slider .testimonial .buttons .btn-next {
+  float: right;
+  border-radius: 0 50px 50px 0;
+  background-image: url('images/icon-next.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.testimonial2 {
+  display: none;
+}
+
+.attribution {
+  width: 100%;
+  position: absolute;
+  font-size: 11px;
+  text-align: center;
+  bottom: 15px;
+  z-index: 5;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
